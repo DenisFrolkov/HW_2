@@ -1,4 +1,5 @@
 fun main() {
+
     print("Введите имя: ")
     val name = readLine()
     print("Введите фамилию: ")
