@@ -5,12 +5,12 @@ fun main() {
     var counter = 0
     val names = arrayOfNulls<String>(people)
     val surnames = arrayOfNulls<String>(people)
-    val Ages = arrayOfNulls<Int>(people)
+    val ages = arrayOfNulls<Int>(people)
     println("Введите имя, фамилию и возраст ${counter+1} человека")
-    while(counter < Ages.size){
+    while(counter < ages.size){
         print("${counter+1}.Age :")
         age = readLine()!!.toInt()
-        if (age >= 18) Ages[counter] = age
+        if (age >= 18) ages[counter] = age
         else{
             println("Человек несовершеннолетний, повторите ввод возраста!")
             continue
@@ -23,8 +23,8 @@ fun main() {
         counter++
     }
     counter = 0
-    while (counter < Ages.size) {
-        println("${counter+1}: ${names[counter]} ${surnames[counter]} ${Ages[counter]}")
+    while (counter < ages.size) {
+        println("${counter+1}: ${names[counter]} ${surnames[counter]} ${ages[counter]}")
         counter++
     }
 }
