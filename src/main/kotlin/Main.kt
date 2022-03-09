@@ -22,9 +22,10 @@ fun main() {
 
         counter++
     }
-    counter = 0
-    while (counter < ages.size) {
-        println("${counter+1}: ${names[counter]} ${surnames[counter]} ${ages[counter]}")
-        counter++
+    myMetod(names, surnames, ages, counter)
+}
+fun myMetod(names: Array<String?>, surnames: Array<String?>, ages: Array<Int?>, counter: Int){
+    for((counter) in ages.withIndex()){
+        println("${counter+1}. ${names[counter]} ${surnames[counter]} ${ages[counter]}")
     }
 }
